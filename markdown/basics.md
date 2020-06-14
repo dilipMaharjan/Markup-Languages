@@ -29,7 +29,7 @@ ___
 > This is a quote
 
 <!-- Links -->
-[Learn&Share](http://learnnshare.com)
+[Learn&Share](https://dilipmaharjan.herokuapp.com/)
 
 <!-- UL -->
  * Item 1
