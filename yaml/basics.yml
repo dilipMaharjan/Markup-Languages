@@ -1,32 +1,32 @@
 #person is a object
 #any type is accepted
-
+# must have space after : 
 person:
   #&name is called an anchor which can be reused 
-  name:&name "Dilip Maharjan"
-  profession:"Software Developer"
+  name: &name "Dilip Maharjan"
+  profession: "Software Developer"
   #!! converts to mentioned type 
-  contact_number:!!str 1234567890
-  male:true
+  contact_number: !!str 1234567890
+  male: true
   #date follows ISO-8601 format
-  birthday:2020-06-14 14:33:22 
+  birthday: 2020-06-14 14:33:22 
   #list
   hobbies:
     -hiking
     -movies
     -music
   #another way to define list
-  movies:["Home Alone","Two States"]
+  movies: ["Home Alone","Two States"]
   #list of objects
   languages:
-  -name:"Python"
-    creator:"Guido van Rossum"
+  -name: "Python"
+    creator: "Guido van Rossum"
   #another way to create list of object
-  - {name:"Python",creator:"Guido van Rossum"}
+  - {name: "Python",creator:"Guido van Rossum"}
   #another way to create list of objects
   -
-    name:"Python"
-    creator:"Guido van Rossum"
+    name: "Python"
+    creator: "Guido van Rossum"
     # > symbol tells to write it in a single line
     description : >
       Python is a general purpose languages 
@@ -39,5 +39,10 @@ person:
     email:learn&share@fakemail.com  
 #using anchor which will give username a value of anchor i.e Dilip Maharjan
 username: *name
+#map
+Banana:
+  calories: 105
+  fat: 0.3g
+  carbs: 16g
   
 
